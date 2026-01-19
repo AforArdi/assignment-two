@@ -17,3 +17,32 @@ html{
     /* padding: 0; */
 }
 
+/* banner container styles */
+#banner-container{
+  background-image: url(./assets/hero-bg.png);
+  background-position: cover;
+  background-repeat: no-repeat;
+}
+#new-icon{
+  background-color: rgba(0, 255, 136, 1);
+}
+#hero-circle{
+  background-image: url(./assets/hero-circle.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 350px;
+  aspect-ratio: 1 / 1;
+  padding-top: 90px;
+}
+#new-icon{
+  position: relative;
+  bottom: 150px;
+  right: 100px;
+}
+#hero-mic{
+  position: relative;
+  margin: 0 auto;
+  width: 120px;
+  height: auto;
+}
