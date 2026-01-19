@@ -20,25 +20,28 @@ html{
 /* banner container styles */
 #banner-container{
   background-image: url(./assets/hero-bg.png);
-  background-position: cover;
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
+  min-height: 760px;
+  max-width: 100vw;
 }
 #new-icon{
   background-color: rgba(0, 255, 136, 1);
 }
 #hero-circle{
   background-image: url(./assets/hero-circle.png);
-  background-size: cover;
-  background-position: center;
+  /* background-size: cover; */
+  /* background-position: center; */
   background-repeat: no-repeat;
   width: 350px;
   aspect-ratio: 1 / 1;
   padding-top: 90px;
 }
 #new-icon{
-  position: relative;
-  bottom: 150px;
-  right: 100px;
+  position: absolute;
+  top: 190px;
+  right: 620px;
 }
 #hero-mic{
   position: relative;
