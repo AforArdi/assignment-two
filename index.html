@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--
+Source - https://stackoverflow.com/a
+Posted by Shahar, modified by community. See post 'Timeline' for change history
+Retrieved 2026-01-19, License - CC BY-SA 4.0
+-->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1"> -->
+
 
     <!-- tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -14,10 +21,10 @@
     <!-- font awesome cdn -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="font-inter overflow-x-hidden">
+<body class="font-inter">
     <header class="border-b py-4 bg-[#1A0B2E] px-4 sm:px-6 lg:px-[100px]">
         <!-- nav container -->
-        <div class="max-w-[992px] mx-auto px-6 flex items-center justify-between">
+        <div class="max-w-[1265px] mx-auto flex items-center justify-between px-0">
 
             <!-- brand -->
             <div class="lg:w-[219px]">
@@ -26,27 +33,31 @@
             </div>
 
             <!-- navbars -->
-            <div>
-                <ul class="lg:flex text-base font-medium text-white gap-[32px] hidden">
+            <div class="hidden lg:block">
+                <ul class="flex text-base font-medium text-white gap-8">
                     <li><a href="">About</a></li>
                     <li><a href="">Episodes</a></li>
                     <li><a href="">Host</a></li>
                 </ul>
             </div>
 
-            <!-- mobile menu -->
-            <button class="lg:hidden text-white text-2xl">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+            <div class="flex items-center gap-4">
+                <!-- burger menu -->
+                <button class="lg:hidden text-white p-2 -mr-2">
+                    <img src="./assets/hamburger-menu.png" class="block" alt="menu">
+                </button>
 
-            <!-- button -->
-            <div>
-                <button class="text-base text-white py-[10px] px-[12px] font-semibold bg-linear-to-r from-[rgba(247,233,63,1)] via-[rgba(251,9,180,1)] to-[rgba(145,0,248,1)] rounded-full hover:cursor-pointer hover:shadow-[0_0_20px_rgba(251,9,180,0.6)] hidden lg:flex items-center">Subscribe <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
+                <!-- subscribe button -->
+                <div class="hidden lg:block">
+                    <button class="text-base text-white py-2.5 px-3 font-semibold bg-linear-to-r from-[rgba(247,233,63,1)] via-[rgba(251,9,180,1)] to-[rgba(145,0,248,1)] rounded-full hover:cursor-pointer hover:shadow-[0_0_20px_rgba(251,9,180,0.6)]">Subscribe <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
+                </div>
             </div>
         </div>
     </header>
 
-    <main></main>
+    <main>
+
+    </main>
 
     <footer></footer>
 </body>
